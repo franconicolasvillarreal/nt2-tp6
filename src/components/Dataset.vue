@@ -3,21 +3,20 @@
   <section class="src-components-dataset">
     <div v-if="users.length">
       <div
-          class="media alert alert-warning"
+          class="media alert alert-warning mt-3"
           v-for="(user, index) in users"
           :key="index"
       >
-          <div class="media-body ml-3">
+          <div class="media-body ml-3 text-left">
             <h5>
-              <u>Usuario {{ index + 1 }}</u>
+              <strong>USUARIO {{ index + 1 }}</strong>
             </h5>
-            <br />
             <p>Nombre: {{ user.nombre }}</p>
             <p>
-              Edad: <i>{{ user.edad }}</i>
+              Edad: {{ user.edad }}
             </p>
             <p>
-              Email: <i>{{ user.email }}</i>
+              Email: {{ user.email }}
             </p>
           </div>
       </div>
@@ -64,5 +63,8 @@
 <style scoped lang="css">
   .src-components-dataset {
 
+  }
+  hr {
+    border: 1px solid rgb(158, 136, 8);
   }
 </style>

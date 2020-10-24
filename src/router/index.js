@@ -5,7 +5,7 @@ import Dataset from '../components/Dataset.vue'
 
 const routes = [
     { path: '/', name: 'Home', component: Form },
-    { path: '/form', name: 'Form', component: Form },
+    { path: '/formulario', name: 'Formulario', component: Form },
     { path: '/dataset', name: 'Dataset', component: Dataset }
 ];
 

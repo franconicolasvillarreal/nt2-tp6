@@ -1,7 +1,7 @@
 <template>
 
   <section class="src-components-navbar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning text-left">
       
       <router-link to="/">
         <a class="navbar-brand" href="#">Inicio</a>
@@ -15,8 +15,8 @@
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <router-link to="/form">
-              <a class="nav-link" href="#">Form</a>
+            <router-link to="/Formulario">
+              <a class="nav-link" href="#">Formulario</a>
             </router-link>
           </li>
 

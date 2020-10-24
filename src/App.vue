@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="container-fluid mt-3">
+  <div id="app" class="container-fluid">
     <div class="jumbotron">
-      <h1>Bienvenidos a Vue.js CLI</h1>
+      <h1>NT2-TP6</h1>
       <br>
       <Navbar />
       <router-view />
@@ -26,7 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #502c3e;
   margin-top: 60px;
 }
 </style>

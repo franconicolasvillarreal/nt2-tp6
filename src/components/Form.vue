@@ -1,8 +1,9 @@
 <template>
 
   <section class="src-components-form">
-    <form novalidate autocomplete="off" @submit.prevent="enviar()">
-      <div class="form-group">
+    
+    <form novalidate autocomplete="off" class="p-3 mt-3 text-left" @submit.prevent="enviar()">
+      <div class="form-group  col-4">
           <label for="nombre">Nombre</label>
           <input 
             type="text"
@@ -16,7 +17,7 @@
             <div v-if="$v.f.nombre.maxLength.$invalid">Este campo debe tener máximo {{$v.f.nombre.maxLength.$params.max}} caracteres</div>
           </div>
       </div>
-      <div class="form-group">
+      <div class="form-group  col-4">
                 <label for="edad">Edad</label>
                 <input 
                     type="number"
@@ -29,7 +30,7 @@
                     <div v-else-if="$v.f.edad.between.$invalid">La edad debe estar entre los 18 y los 120 años</div>
                 </div>
           </div>
-          <div class="form-group">
+          <div class="form-group col-4">
                 <label for="email">Email</label>
                 <input 
                     type="email"
@@ -42,11 +43,11 @@
                     <div v-if="$v.f.email.email.$invalid">Debe proveer un email válido</div>
                 </div>
           </div>
-          <div class="form-group">
+          <div class="form-group col-4">
                 <input 
                     type="submit"
                     :disabled="false"
-                    class="btn btn-success mt-4"
+                    class="btn btn-info mt-4"
                     value="Enviar"
                 >
           </div>
@@ -93,7 +94,7 @@
         async sendDatosFormAxios(datos) {
             try {
               let res = await this.axios.post(this.url, datos, {'content-type': 'application/json'})
-              await this.delay(500)
+              /* await this.delay(500) */
               console.log(res.data)
             }
             catch(error) {
